@@ -1,82 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>prezzo</title>
-	</head>
-	<body>
-		<h1>Ordine Cliente</h1>
 
-		<form action="process.php" method="post">
-			<h2>Dati Cliente</h2>
-			<label for="nome">Nome:</label>
-			<input type="text" id="nome" name="nome" required /><br /><br />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 
-			<label for="cognome">Cognome:</label>
-			<input type="text" id="cognome" name="cognome" required /><br /><br />
+<body>
+    <form action="process.php" method="post">
+        <h2>Dati cliente</h2>
 
-			<label for="ragione_sociale">Ragione Sociale:</label>
-			<input
-				type="text"
-				id="ragione_sociale"
-				name="ragione_sociale"
-			/><br /><br />
+        <label for="nome">nome</label>
+        <input type="text" name="nome" id="nome"><br>
 
-			<label for="indirizzo">Indirizzo:</label>
-			<input type="text" id="indirizzo" name="indirizzo" /><br /><br />
+        <label for="cognome">cognome</label>
+        <input type="text" name="cognome" id="cognome"><br>
 
-			<label for="p_iva">Partita IVA:</label>
-			<input type="text" id="p_iva" name="p_iva" /><br /><br />
+        <label for="ragionesociale">ragione sociale</label>
+        <input type="text" name="ragionesociale" id="ragionesociale"><br>
 
-			<label for="tel">Telefono:</label>
-			<input type="tel" id="tel" name="tel" /><br /><br />
+        <label for="indirizzo">indirizzo</label>
+        <input type="text" name="indirizzo" id="indirizzo"><br>
 
-			<h2>Dati Prodotto</h2>
-			<label for="descrizione">Descrizione:</label>
-			<input
-				type="text"
-				id="descrizione"
-				name="descrizione"
-				required
-			/><br /><br />
+        <label for="partitaIVA">partita IVA</label>
+        <input type="text" name="partitaIVA" id="partitaIVA"><br>
 
-			<label for="codice">Codice:</label>
-			<input type="text" id="codice" name="codice" required /><br /><br />
+        <label for="telefono">telefono</label>
+        <input type="text" name="telefono" id="telefono"><br>
+        <br>
 
-			<label for="giacenza">Giacenza:</label>
-			<input type="number" id="giacenza" name="giacenza" required /><br /><br />
+        <h2>Dati prodotto</h2>
 
-			<label for="prezzo_unitario">Prezzo Unitario (€):</label>
-			<input
-				type="number"
-				id="prezzo_unitario"
-				name="prezzo_unitario"
-				step="0.01"
-				required
-			/><br /><br />
+        <label for="descrizione">descrizione</label>
+        <input type="text" name="descrizione" id="descrizione"><br>
 
-			<label for="percentuale_iva">Percentuale IVA (%):</label>
-			<input
-				type="number"
-				id="percentuale_iva"
-				name="percentuale_iva"
-				step="0.01"
-				required
-			/><br /><br />
+        <label for="codice">codice</label>
+        <input type="text" name="codice" id="codice"><br>
 
-			<label for="quantita_acquistata">Quantità Acquistata:</label>
-			<input
-				type="number"
-				id="quantita_acquistata"
-				name="quantita_acquistata"
-				required
-			/><br /><br />
+        <label for="giacenza">giacenza</label>
+        <input type="number" name="giacenza" id="giacenza"><br>
 
-			<label for="sconto">Sconto (%):</label>
-			<input type="number" id="sconto" name="sconto" step="0.01" /><br /><br />
+        <label for="prezzounitario">prezzounitario</label>
+        <input type="number" name="prezzounitario" id="prezzounitario"><br>
 
-			<input name="submit" type="submit" value="Calcola Prezzo" />
-		</form>
-	</body>
+        <label for="percentualeIVA">percentualeIVA</label>
+        <input type="number" name="percentualeIVA" id="percentualeIVA"><br>
+
+        <label for="quantitaacquistata">quantitaacquistata</label>
+        <input type="number" name="quantitaacquistata" id="quantitaacquistata"><br>
+
+        <label for="sconto">sconto</label>
+        <input type="number" name="sconto" id="sconto"><br>
+        <br>
+
+        <input type="submit" value="calcolaprezzo">
+
+
+
+    </form>
+
+
+</body>
+
 </html>

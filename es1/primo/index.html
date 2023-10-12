@@ -1,58 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>form</title>
-	</head>
 
-	<body>
-		<p>modulo di rilevazione temperatura</p>
-		<form action="process.php" method="post">
-			<label for="localita">Località</label>
-			<input type="text" name="localita" id="localita" required />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 
-			<br />
+<body>
+    <p>modulo di rivelazione della temperatura</p>
+    <form action="process.php" method="post">
 
-			<label for="data">data</label>
-			<input type="date" name="data" id="data" required />
+        <label for="LOCALITA">LOCALITA'</label>
+        <input name="localita" type="text">
+        <br>
 
-			<br />
+        <label for="DATA'">DATA'</label>
+        <input name="data" type="date">
+        <br>
 
-			<label for="ora">ora</label>
-			<input type="time" name="ora" id="ora" required />
+        <label for="ORA'">ORA'</label>
+        <input name="ora" type="text">
+        <br>
 
-			<br />
+        <label for="tiporilevazione">TIPO RILEVAZIONE</label>
 
-			<label for="tipo-rilevazione">tipo rilevazione</label>
 
-			<input type="radio" name="tipo-rilevazione" id="ofc" value="OFC" />
-			<label for="ofc">OFC</label>
 
-			<input type="radio" name="tipo-rilevazione" id="amb" value="AMB" />
-			<label for="amb">AMB</label>
 
-			<input type="radio" name="tipo-rilevazione" id="dra" value="DRA" />
-			<label for="dra">DRA</label>
+        <input type="radio" name="tiporilevazione" id="OFC" value="OFC">
+        <label for="OFC">OFC</label>
 
-			<br />
 
-			<label for="umidita">umidita</label>
-			<select name="umidita" id="umidita" required>
-				<option value="assoluta">assoluta</option>
-				<option value="relativa">relativa</option>
-			</select>
-			<br />
-			<label for="clima">clima attuale</label>
-			<select name="clima" id="clima" required>
-				<option value="pioggia">pioggia</option>
-				<option value="sereno">sereno</option>
-				<option value="ventoso">ventoso</option>
-				<option value="umido">umido</option>
-				<option value="foschia">foschia</option>
-			</select>
-			<br />
-			<input type="submit" value="invia rilevazione" />
-		</form>
-	</body>
+        <input type="radio" name="tiporilevazione" id="AMB" value="AMB">
+        <label for="AMB">AMB</label>
+
+
+        <input type="radio" name="tiporilevazione" id="DRA" value="DRA">
+        <label for="DRA">DRA</label>
+        <br>
+
+
+        <label for="UMIDITA">UMIDITA''</label>
+        <select name="umidita" id="umidita">
+            <option value="ASSOLUTA">ASSOLUTA</option>
+            <option value="RELATIVA">RELATIVA</option>
+        </select>
+
+        <br>
+
+        <label for="clima">clima attuale</label>
+        <select name="clima" id="clima">
+            <option value="pioggia">pioggia</option>
+            <option value="sereno">sereno</option>
+            <option value="ventoso">ventoso</option>
+            <option value="umido">umido</option>
+            <option value="foschia">foschia</option>
+        </select>
+
+        <br>
+        <label for="altitudine">Altitudine</label>
+        <input name="altitudine" type="text">
+        <br>
+
+        <input type="submit" value="Invia rivelazione">
+
+    </form>
+</body>
+
 </html>
